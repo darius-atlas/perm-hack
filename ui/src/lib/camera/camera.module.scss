@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  flex: 1 1 auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--border-large);
+}
+
+.select {
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  & div {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  & div:not(:first-child) {
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  & .date {
+    color: var(--green);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  & .time {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  & .line {
+    height: 100%;
+    width: 1px;
+    background-color: var(--black);
+  }
+
+  & .name {
+    color: var(--green);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  & .number {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}

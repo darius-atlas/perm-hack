@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.button {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--white);
+  background-color: #94BF5E;
+}

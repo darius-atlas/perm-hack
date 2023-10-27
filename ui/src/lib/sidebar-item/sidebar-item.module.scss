@@ -1,0 +1,59 @@
+.item {
+  background: var(--white);
+  border-radius: var(--border-medium);
+  padding: 10px 20px;
+  display: flex;
+  gap: 0 8px;
+  justify-content: space-between;
+}
+
+.line {
+  width: 1px;
+  background-color: var(--black);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0 10px;
+  justify-content: center;
+  .text {
+    text-align: end;
+    color: var(--gray);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .percent {
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+.info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  & p {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--black
+    );
+  }
+
+  & span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
