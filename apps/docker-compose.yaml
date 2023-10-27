@@ -8,3 +8,14 @@ services:
       - .env
     ports:
       - "5430:5432"
+  http_server:
+    build: ./py-conveyor-service/
+    restart: on-failure
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./py-conveyor-service/:/app
