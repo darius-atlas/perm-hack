@@ -1,4 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* You can add global styles to this file, and also import other style files */
+
+
+
+@font-face {
+  font-family: "Bion";
+  font-weight: 400;
+  src: local('Bion'), url(../assets/fonts/bion-book.otf) format("otf");
+  src: local('Bion'), url(../assets/fonts/bion-book.ttf) format("ttf");
+  src: local('Bion'), url(../assets/fonts/bion-book.woff) format("woff");
+  src: local('Bion'), url(../assets/fonts/bion-book.woff2) format("woff2");
+}
+#root {
+  --bg: #D9D9D9;
+  --white: #fff;
+  --black: #000;
+  --gray: #4A4A4A;
+  --green: #65843F;
+
+
+  --border-large: 42px;
+  --border-medium: 28px;
+
+
+  font-family: "Bion", sans-serif;
+  font-size: 20px;
+}
