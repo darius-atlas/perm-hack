@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@perm-hack/page": ["page/src/index.ts"],
+      "@perm-hack/ui": ["ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

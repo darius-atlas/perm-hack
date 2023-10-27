@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/crud/src",
   "projectType": "application",
+  "implicitDependencies": ["agw"],
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
@@ -24,7 +25,8 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "crud:build"
+        "buildTarget": "crud:build",
+        "proxyConfig": "apps/crud/proxy.conf.json"
       },
       "configurations": {
         "development": {
