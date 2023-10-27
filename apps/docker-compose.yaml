@@ -8,6 +8,9 @@ services:
       - .env
     ports:
       - "5430:5432"
+    networks:
+      - app
+
   http_server:
     build: ./py-conveyor-service/
     restart: on-failure
@@ -19,3 +22,22 @@ services:
       - db
     volumes:
       - ./py-conveyor-service/:/app
+    networks:
+      - app
+
+  frontend:
+      build: ./crud/
+      restart: always
+      env_file:
+          -   .env
+      ports:
+          - "4200:4200"
+      depends_on:
+          - http_server
+      networks:
+          - app
+
+networks:
+    app:
+        driver: bridge
+
