@@ -7,11 +7,9 @@ export interface NavbarProps {}
 export function Navbar(props: NavbarProps) {
   return (
     <div className={styles.wrapper}>
-      <Link to={"/"} className={styles.logo}>Logo</Link>
       <ul className={styles.container}>
-        <li>link1</li>
-        <li>link2</li>
-        <li>link3</li>
+        <li><Link to="/">Камера</Link></li>
+        <li><Link to="/statistics">Статистика</Link></li>
       </ul>
     </div>
   );

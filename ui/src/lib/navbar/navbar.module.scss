@@ -1,24 +1,27 @@
 .wrapper {
-  display: flex;
-  align-items: center;
-  background-color: var(--bg);
-  padding: 10px;
-  border-radius: var(--border-medium);
-  margin: 10px;
-  gap: 20px;
-  -webkit-box-shadow: 0px 5px 9px -8px rgba(34, 60, 80, 0.6);
-  -moz-box-shadow: 0px 5px 9px -8px rgba(34, 60, 80, 0.6);
-  box-shadow: 0px 5px 9px -8px rgba(34, 60, 80, 0.6);
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 10px;
+    border-radius: var(--border-medium);
+    margin: 10px;
+    gap: 20px;
+    -webkit-box-shadow: 0px 5px 9px -8px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 5px 9px -8px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 9px -8px rgba(34, 60, 80, 0.6);
 }
+
 .container {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
+
 .logo {
-  padding: 5px 10px;
-  border-radius: 20px;
-  background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--white);
 }

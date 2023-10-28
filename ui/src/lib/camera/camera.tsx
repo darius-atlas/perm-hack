@@ -1,6 +1,6 @@
 import cls from './camera.module.scss';
 import {useEffect, useState} from "react";
-
+import video from "../../../../apps/crud/assets/video/bitch lasagna.mp4"
 /* eslint-disable-next-line */
 export interface CameraProps {
 }
@@ -51,7 +51,7 @@ export function Camera(props: CameraProps) {
                 </div>
             </div>
             <div>
-                {randomNumber}
+                <video src={video} controls={true} autoPlay={true}/>
             </div>
         </div>
     );
