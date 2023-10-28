@@ -4,7 +4,8 @@ from fastapi import FastAPI
 from server.routers_init import all_routers
 
 app = FastAPI(
-    title="Конвеер"
+    title="Конвеер",
+    docs_url='/api/docs'
 )
 
 for router in all_routers:
