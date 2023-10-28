@@ -49,14 +49,13 @@ def upgrade():
                     sa.UniqueConstraint('id', name=op.f('uq_conveer_id'))
                     )
     op.execute('''INSERT INTO camera(id,order_numb, camera_type) VALUES (1,1, 'По умолчанию')''')
-    for i in range(0, 12):
-        import random
-        from datetime import datetime, timedelta
+    import random
+    from datetime import datetime, timedelta
 
-        for _ in range(0, 100):
-            random_date = datetime.now() - timedelta(days=random.randint(1, 365))  # Генерация случайной даты за последний год
-            op.execute(f'''INSERT INTO conveer (metal, glass, plastic, wood, camera_id, created_at)
-                         VALUES (floor(random() * 20 + 1), floor(random() * 10 + 1), floor(random() * 15 + 1), floor(random() * 30 + 1), 1,'{random_date}');''')
+    for _ in range(0, 100):
+        random_date = datetime.now() - timedelta(days=random.randint(1, 365))  # Генерация случайной даты за последний год
+        op.execute(f'''INSERT INTO conveer (metal, glass, plastic, wood, camera_id, created_at)
+                     VALUES (floor(random() * 20 + 1), floor(random() * 10 + 1), floor(random() * 15 + 1), floor(random() * 30 + 1), 1,'{random_date}');''')
 
 
 def downgrade():
