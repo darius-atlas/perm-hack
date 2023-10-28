@@ -66,7 +66,7 @@ def upgrade():
     mean_wood = 15  # Среднее значение для дерева
     std_dev_wood = 5  # Стандартное отклонение для дерева
 
-    for _ in range(0, 50):
+    for _ in range(0, 10):
         random_date = datetime.now() - timedelta(days=random.randint(1, 365))
 
         # Генерируем случайные значения, следующие нормальному распределению
