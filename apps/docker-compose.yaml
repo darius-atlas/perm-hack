@@ -25,17 +25,17 @@ services:
     networks:
       - app
 
-  frontend:
-      build: ./crud/
-      restart: always
-      env_file:
-          -   .env
-      ports:
-          - "4200:4200"
-      depends_on:
-          - http_server
-      networks:
-          - app
+#  frontend:
+#      build: ./crud/
+#      restart: always
+#      env_file:
+#          -   .env
+#      ports:
+#          - "4200:4200"
+#      depends_on:
+#          - http_server
+#      networks:
+#          - app
 
 networks:
     app:
