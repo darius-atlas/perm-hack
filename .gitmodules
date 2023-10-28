@@ -1,0 +1,3 @@
+[submodule "yolo-websocket"]
+	path = yolo-websocket
+	url = https://github.com/95862888/yolo-websocket.git
