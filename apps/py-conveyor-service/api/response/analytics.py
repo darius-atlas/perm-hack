@@ -63,6 +63,7 @@ class ResponseAnalyticsFactory:
     @classmethod
     def get_from_model_timeline_chart(cls, models: list[DBConveer]) -> list[TimelineCharts]:
         response = []
+        print(len(models))
         for i in models:
             response.append(cls.get_from_model_timeline_charts(name='wood', value=i.wood, time=i.created_at))
             response.append(cls.get_from_model_timeline_charts(name='glass', value=i.glass, time=i.created_at))
