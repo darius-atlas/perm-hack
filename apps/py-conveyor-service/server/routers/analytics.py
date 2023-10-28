@@ -5,7 +5,7 @@ from api.request.analytics import AnalyticsFilters
 from managers.analytics import AnalyticsManager
 from server.depends import get_session, PagesPaginationParams
 
-router = APIRouter(prefix="/analytics", tags=['Ride'])
+router = APIRouter(prefix="/api/analytics", tags=['Ride'])
 
 
 @router.post('/all')
