@@ -15,7 +15,7 @@ class AnalyticsRepository(BaseRepository):
 
     async def get_analytic(self,
                            start_date: Optional[datetime],
-                           end_date: Optional[datetime]):
+                           end_date: Optional[datetime]) -> list[DBConveer]:
         query = (
             select(DBConveer)
             .select_from(DBConveer)
